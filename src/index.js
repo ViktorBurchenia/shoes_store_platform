@@ -2,8 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { ApolloProvider } from '@apollo/client';
-import client from './apolloClient';
-import App from './App';
+import {client} from './utils';
+import {App} from "./app/App";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 

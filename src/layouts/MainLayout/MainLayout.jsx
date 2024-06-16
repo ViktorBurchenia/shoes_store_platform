@@ -1,8 +1,8 @@
 import React from 'react';
-import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer/Footer';
+import {Header} from "../../components/Header";
 
-function Layout({ children }) {
+const  MainLayout= ({ children })  => {
   return (
     <div style={layoutStyle}>
       <Header />
@@ -25,4 +25,4 @@ const mainStyle = {
   padding: '20px',
 };
 
-export default Layout;
+export {MainLayout};

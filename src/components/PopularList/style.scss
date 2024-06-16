@@ -1,0 +1,44 @@
+.sellers{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+
+
+  &_title{
+   color: black;
+    font-size: 34px;
+  }
+
+  &_list{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 20px;
+  }
+
+  &_btn{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    padding: 10px 20px;
+    border: 1px solid rgba(128, 128, 128, 0.18);
+    transition: all linear .2s;
+    &:hover{
+      border-color: rgba(128, 128, 128, 0.54);
+      transform: translateY(-5px);
+      box-shadow:  3px 5px rgba(0, 0, 0, 0.17);
+    }
+  }
+}
+
+.sellers-container{
+  width: 100%;
+  padding: 15px;
+}

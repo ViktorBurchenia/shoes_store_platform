@@ -1,10 +1,9 @@
-// src/components/ShoeStorePage.js
 
 import React from 'react';
 import { useQuery } from '@apollo/client';
-import { GET_SHOES } from '../graphql/queries/get_shoes';
+import { GET_SHOES } from '../../graphql/queries/get_shoes';
 
-function ShoeStorePage() {
+function ShoePage() {
   const { loading, error, data } = useQuery(GET_SHOES);
 
   if (loading) return <p>Loading...</p>;
@@ -13,7 +12,7 @@ function ShoeStorePage() {
   const shoes = data.getShoes.collection;
 
   return (
-    <div>
+    <section>
       <h1>Shoe Store</h1>
       <div>
         {shoes.map(shoe => (
@@ -26,8 +25,8 @@ function ShoeStorePage() {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 }
 
-export default ShoeStorePage;
+export {ShoePage};
