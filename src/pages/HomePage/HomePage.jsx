@@ -1,9 +1,9 @@
 import React from 'react';
-import {Hero, PopularList, ShoeCard} from "../../components";
+import {Hero, PopularList} from "../../components";
 
 const HomePage = () => {
     return (
-        <div className="hero hero-container">
+        <div className="home home-container ">
             <Hero/>
             <PopularList/>
         </div>

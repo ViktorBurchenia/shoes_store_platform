@@ -98,7 +98,7 @@ const hardcodeArr=[
 ]
 const PopularList = () => {
     return (
-        <section className="sellers sellers-container">
+        <section className="sellers sellers-container container">
             <h2 className="sellers_title">Top sellers</h2>
             <div className="sellers_list">
                 {
