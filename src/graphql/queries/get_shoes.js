@@ -9,8 +9,10 @@ export const GET_SHOES = gql`
         category
         color
         createdAt
+        description
         model
         price
+        image
         size
       }
       metadata {
