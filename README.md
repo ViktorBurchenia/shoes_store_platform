@@ -1,5 +1,6 @@
-## Requirements
+## Getting Started
 
+**Requirements:**
 - Node.js v14.18.1
 
 **Preview:**
